@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.card, .main-card {
+    background-color: hsl(235, 46%, 20%);
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.main-card {
+    padding: 20px;
+}
+
+.card {
+    padding: 30px 8px;
+}
+
+.big-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin: 100px;
+    grid-column-gap: 7px;
+}
+
+.small-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 7px;
+    grid-row-gap: 7px; 
+}
