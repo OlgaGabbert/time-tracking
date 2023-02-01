@@ -22,19 +22,63 @@ body {
 
 .card {
     padding: 30px 8px;
+    position: absolute;
+    margin-top: 25px;
+    height: 110px;
 }
 
 .big-container {
     display: grid;
     grid-template-columns: 1fr 6fr;
     margin: 100px;
-    grid-column-gap: 7px;
+    grid-column-gap: 9px;
 }
 
 .small-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 200px 200px;
     grid-column-gap: 7px;
-    grid-row-gap: 7px; 
+    grid-row-gap: 7px;
+}
+
+.background-work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.background-play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.background-study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.background-exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.background-social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.background-self-care {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.background {
+    z-index: -1;
+    border-radius: 20px;
+    position: relative;
+}
+
+.image {
+    height: 50px;
+    width: 50px;
+    position: relative; 
+    left: 190px;
+}
+
+.wrapper {
+    position: relative;
 }
