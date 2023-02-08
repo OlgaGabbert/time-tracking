@@ -24,15 +24,55 @@ body {
     height: 70%;
 } 
 
-.card, .main-card {
-    background-color: hsl(235, 46%, 20%);
+
+.card {
     margin: 2px;
     border-radius: 20px;
+    padding: 10px;
+}
+
+.name {
+    margin: 10px;
+}
+
+#report {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#jeremy {
+    margin: 10px;
+    width: 60px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#jeremy-name {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .main-card {
-    padding: 20px;
-    height: 378px;
+
+}
+
+.avatar-name {
+    background-color: hsl(246, 80%, 60%);
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.stats {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    padding: 10px;
+    height: 125px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .card {
@@ -41,20 +81,32 @@ body {
     margin-top: 30px;
     height: 110px;
     width: 200px;
+    background-color: hsl(235, 46%, 20%);
 }
 
 .big-container {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 30px;
 }
 
 .small-container {
     display: grid;
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 200px 200px;
-    grid-column-gap: 15px;
     grid-row-gap: 15px;
+}
+
+.time {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.card-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
 }
 
 .background-work {
@@ -92,7 +144,7 @@ body {
     height: 50px;
     width: 50px;
     position: relative; 
-    left: 190px;
+    left: 160px;
 }
 
 .wrapper {
