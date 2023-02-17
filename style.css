@@ -61,7 +61,8 @@ body {
 
 .main-card {
     grid-row: 1 / span 2;
-    background-color:hsl(235, 46%, 20%);
+    position: relative;
+    /* background-color:hsl(235, 46%, 20%); */
 }
 
 #jeremy {
@@ -88,21 +89,27 @@ body {
 }
 
 .avatar-name {
-    height: 250px;
+    height: 300px;
     width: 200px;
     border-radius: 20px;
     padding: 10px;
     background-color: hsl(246, 80%, 60%);
+    position: absolute;
+    top: 22px;
 }
 
 .stats {
     background-color:hsl(235, 46%, 20%);
     border-radius: 20px;
     padding: 10px;
-    height: 125px;
+    height: 250px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
+    position: relative;
+    top: 250px;
+    z-index: -1;
+    padding-top: 80px;
 }
 
 
