@@ -61,6 +61,8 @@ body {
     margin-top: 55px;
     height: 180px;
     width: 200px;
+    display: grid;
+    grid-template-rows: 1fr;
 }
 
 .main-card {
@@ -133,10 +135,8 @@ body {
 
 .stats a:hover, .stats a:active {
     color: white;
-    cursor: pointer;
+    font-weight: 400;
 }
-
-
 
 /* .card {
     padding: 30px 8px;
@@ -146,6 +146,7 @@ body {
     width: 200px;
     background-color: hsl(235, 46%, 20%);
 } */
+
 
 .card-header {
     display: grid;
@@ -194,4 +195,12 @@ body {
 
 .wrapper {
     position: relative;
+}
+
+.infos {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    justify-content: center;
+    align-content: center;
 }

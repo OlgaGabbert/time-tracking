@@ -25,12 +25,12 @@
           </div>
         </div>
         <div class='stats'>
-          <a href="#" class='links' id='link'>Daily</a>
-          <a href="#" class='links'>Weekly</a> 
-          <a href="#" class='links'>Monthly</a>
+          <a href="#" class='links' onclick='changeToDaily()' id='daily'>Daily</a>
+          <a href="#" class='links' onclick='changeToWeekly()' id='weekly'>Weekly</a> 
+          <a href="#" class='links' onclick='changeToMonthly()' id='monthly'>Monthly</a>
         </div>
         <div id='card-background'>
-          
+
         </div>
       </div>
 
@@ -44,14 +44,10 @@
               <div class='infos'>
                 <div class='card-header'>
                 <span>Work</span>
-                <img src="./images/icon-ellipsis.svg" alt="">
+                <img src="./images/icon-ellipsis.svg" alt="" onclick='showPreviousWork()'>
                 </div>
-                <span id='work'><!-- daily --></span>
-              Previous - 7hrs <!-- daily -->
-              32hrs <!-- weekly -->
-              Previous - 36hrs <!-- weekly -->
-              103hrs <!-- monthly -->
-              Previous - 128hrs <!-- monthly -->
+                <span>5hrs</span>
+                <span>Today</span>
               </div>
             </div>
         </div>
@@ -64,14 +60,12 @@
                 <img src="./images/icon-play.svg" alt="" class='image'>
               </div>
               <div class='infos'>
-              Play 
-              <img src="./images/icon-ellipsis.svg" alt="">
-              1hr <!-- daily -->
-              Previous - 2hrs <!-- daily -->
-              10hrs <!-- weekly -->
-              Previous - 8hrs <!-- weekly -->
-              23hrs <!-- monthly -->
-              Previous - 29hrs <!-- monthly -->
+                <div class='card-header'>
+                  <span>Play</span>
+                  <img src="./images/icon-ellipsis.svg" alt="" onclick='showPreviousPlay()'>
+                  </div>
+                  <span>1hrs</span>
+                  <span>Today</span>
               </div>
           </div>
         </div>
@@ -84,14 +78,12 @@
                 <img src="./images/icon-study.svg" alt="" class='image'>
               </div>
               <div class='infos'>
-              Study
-              <img src="./images/icon-ellipsis.svg" alt="">
-              0hrs <!-- daily -->
-              Previous - 1hr <!-- daily -->
-              4hrs <!-- weekly -->
-              Previous - 7hrs <!-- weekly -->
-              13hrs <!-- monthly -->
-              Previous - 19hrs <!-- monthly -->
+                <div class='card-header'>
+                  <span>Study</span>
+                  <img src="./images/icon-ellipsis.svg" alt="" onclick='showPreviousStudy()'>
+                  </div>
+                  <span>0hr</span>
+                  <span>Today</span>
               </div>
           </div>
         </div>
@@ -104,14 +96,12 @@
                 <img src="./images/icon-exercise.svg" alt="" class='image'>
               </div>
               <div class='infos'>
-              Exercise
-              <img src="./images/icon-ellipsis.svg" alt="">
-              1hr <!-- daily -->
-              Previous - 1hr <!-- daily -->
-              4hrs <!-- weekly -->
-              Previous - 5hrs <!-- weekly -->
-              11hrs <!-- monthly -->
-              Previous - 18hrs <!-- monthly -->
+                <div class='card-header'>
+                  <span>Exercise</span>
+                  <img src="./images/icon-ellipsis.svg" alt="" onclick='showPreviousExercise()'>
+                  </div>
+                  <span>1hr</span>
+                  <span>Today</span>
               </div>
           </div>
         </div>
@@ -124,14 +114,12 @@
                 <img src="./images/icon-social.svg" alt="" class='image'>
               </div>
               <div class='infos'>
-              Social
-              <img src="./images/icon-ellipsis.svg" alt="">
-              1hr <!-- daily -->
-              Previous - 3hrs <!-- daily -->
-              5hrs <!-- weekly -->
-              Previous - 10hrs <!-- weekly -->
-              21hrs <!-- monthly -->
-              Previous - 23hrs <!-- monthly -->
+                <div class='card-header'>
+                  <span>Social</span>
+                  <img src="./images/icon-ellipsis.svg" alt="" onclick='showPreviousSocial()'>
+                  </div>
+                  <span>1hr</span>
+                  <span>Today</span>
               </div>
           </div>
         </div>
@@ -144,14 +132,12 @@
                 <img src="./images/icon-self-care.svg" alt="" class='image'>
               </div>
               <div class='infos'>
-              Self Care
-              <img src="./images/icon-ellipsis.svg" alt="">
-              0hrs <!-- daily -->
-              Previous - 1hr <!-- daily -->
-              2hrs <!-- weekly -->
-              Previous - 2hrs <!-- weekly -->
-              7hrs <!-- monthly -->
-              Previous - 11hrs <!-- monthly -->
+                <div class='card-header'>
+                  <span>Self Care</span>
+                  <img src="./images/icon-ellipsis.svg" alt="" onclick='showPreviousWork()'>
+                  </div>
+                  <span>0hr</span>
+                  <span>Today</span>
               </div>
           </div>
         </div>
