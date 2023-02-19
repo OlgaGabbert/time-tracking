@@ -1,6 +1,5 @@
 let weeklyCurrents = [];
 let dailyCurrents = [];
-console.log(dailyCurrents);
 let monthlyCurrents = [];
 
 let dailyPrevis = [];
@@ -27,17 +26,7 @@ async function fetchData() {
         let monthlyPrevious = data[i].timeframes.monthly.previous;
         monthlyPrevis.push(monthlyPrevious);
     }
-    // let myData = new Object({});
-    // for (let i = 0; i < data.length; i++) {
-    //     myData.title = data[i].title;
-    //     console.log(myData.title);
-    //     myData.dailyC = data[i].timeframes.daily.current;
-    //     myData.dailyP = data[i].timeframes.daily.previous;
-    //     myData.weeklyC = data[i].timeframes.weekly.current;
-    //     myData.weeklyP = data[i].timeframes.weekly.previous;
-    //     myData.monthlyC = data[i].timeframes.monthly.current;
-    //     myData.monthlyP = data[i].timeframes.monthly.previous;
-    // }
+
 }
 
 // Call function 
@@ -62,9 +51,14 @@ function changeToDaily() {
     monthly.style.color= '#DADADA';
     monthly.style.fontWeight ='300';
 
+    workHours.innerHTML = "5hrs";
+    playHours.innerHTML = '1hr';
+    studyHours.innerHTML = '0hr';
+    exerciseHours.innerHTML = '1hr';
+    socialHours.innerHTML = '1hr';
     selfCareHours.innerHTML = "0hr";
 }
-
+// Call function to have default display
 changeToDaily();
 
 function changeToWeekly() {
@@ -89,4 +83,10 @@ function changeToMonthly() {
     daily.style.fontWeight ='300';
     monthly.style.color='white';
     monthly.style.fontWeight ='400';
+    workHours.innerHTML = monthlyCurrents[0] + 'hrs';
+    playHours.innerHTML = monthlyCurrents[1] + 'hrs';
+    studyHours.innerHTML = monthlyCurrents[2] + 'hrs';
+    exerciseHours.innerHTML = monthlyCurrents[3] + 'hrs';
+    socialHours.innerHTML = monthlyCurrents[4] + 'hrs';
+    selfCareHours.innerHTML = monthlyCurrents[5] + "hrs";
 }
