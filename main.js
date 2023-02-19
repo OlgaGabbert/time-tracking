@@ -19,7 +19,7 @@ async function fetchData() {
         let monthlyCurrent = data[i].timeframes.monthly.current;
         monthlyCurrents.push(monthlyCurrent);
 
-        let dailyPrevious = data[1].timeframes.daily.previous;
+        let dailyPrevious = data[i].timeframes.daily.previous;
         dailyPrevis.push(dailyPrevious);
         let weeklyPrevious = data[i].timeframes.weekly.previous;
         weeklyPrevis.push(weeklyPrevious);
@@ -42,6 +42,8 @@ let studyHours = document.getElementById('studyHours');
 let exerciseHours = document.getElementById('exerciseHours');
 let socialHours = document.getElementById('socialHours');
 let selfCareHours = document.getElementById('selfCareHours');
+
+let workHoursInfo = document.getElementById('workHoursInfo');
 
 function changeToDaily() {
     daily.style.color='white';
@@ -74,6 +76,7 @@ function changeToWeekly() {
     exerciseHours.innerHTML = weeklyCurrents[3] + 'hrs';
     socialHours.innerHTML = weeklyCurrents[4] + 'hrs';
     selfCareHours.innerHTML = weeklyCurrents[5] + "hrs";
+    changeToWeekly.called = true;
 }
 
 function changeToMonthly() {
@@ -89,4 +92,18 @@ function changeToMonthly() {
     exerciseHours.innerHTML = monthlyCurrents[3] + 'hrs';
     socialHours.innerHTML = monthlyCurrents[4] + 'hrs';
     selfCareHours.innerHTML = monthlyCurrents[5] + "hrs";
+    changeToMonthly.called = true;
+}
+
+function showPreviousWork() {
+    if(changeToMonthly.called) {
+        workHours.innerHTML = monthlyPrevis[0] + 'hrs';
+        workHoursInfo.innerHTML = 'last month';
+    } else if(changeToWeekly.called) {
+        workHours.innerHTML = weeklyPrevis[0] + 'hrs';
+        workHoursInfo.innerHTML = 'last week';
+    } else {
+    workHours.innerHTML = dailyPrevis[0] + 'hrs';
+    workHoursInfo.innerHTML = 'yesterday';
+    }
 }
